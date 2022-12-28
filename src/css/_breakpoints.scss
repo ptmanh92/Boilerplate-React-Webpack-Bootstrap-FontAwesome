@@ -1,0 +1,32 @@
+$xs_min: 319px;
+$xs: 320px;
+$sm_min: 575px;
+$sm: 576px;
+$md_min: 767px;
+$md: 768px;
+$lg_min: 1023px;
+$lg: 1024px;
+$xl_min: 1279px;
+$xl: 1280px;
+$zzl_min: 1439px;
+$xxl: 1440px;
+$xxxl_min: 1919px;
+$xxxl: 1920px;
+
+@mixin responsive_min($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin responsive_max($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin responsive($breakpoint_min, $breakpoint_max) {
+    @media (min-width: $breakpoint_min) and (max-width: $breakpoint_max) {
+        @content;
+    }
+}
