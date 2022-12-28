@@ -2,7 +2,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
-// import "../css/bootstrap.min.css";	// Overwrite Bootstrap styles
+import "normalize.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/_styles.scss";
 
 const App = () => {
